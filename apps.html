@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf</title>
+    <link rel="shortcut icon" type="image/png" href="assets/books-icon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body>
+    <div class="header">
+        <h1>Bookshelf-Apps</h1>
+    </div>
+    <!-- tambah buku -->
+    <div class="wrapper">
+        <div class="container bg-white shadow " id="add-todo">
+            <h2 class="container-header text-center">
+                Tambahkan Buku
+            </h2>
+            <form class="form" action="#" id="form">
+                <div class="form-group form-title">
+                    <input type="text" id="title" name="title" required placeholder="Judul Buku" />
+                </div>
+                <div class="form-group form-title">
+                    <input type="text" id="authorBooks" name="penulis" required placeholder="Pengarang Buku" />
+                </div>
+                <div class="form-group form-title">
+                    <input type="number" id="yearBooks" name="tahun" required placeholder="Tahun Terbit" />
+                </div>
+                <input type="submit" value="Submit" name="Submit" class="btn-submit" hr />
+            </form>
+        </div>
+    </div>
+    <!-- tambah buku -->
+    <div class="hasil">
+        <!-- belum baca -->
+        <div class="belum">
+            <h3>Buku yang belum selesai Dibaca</h3>
+            <div class="list-item" id="todos"></div>
+        </div>
+        <!-- belum baca -->
+        <!-- sudah baca -->
+        <div class="selesai">
+            <h3>Buku yang sudah selesai dibaca</h3>
+            <div class="list-item" id="completed-todos"></div>
+        </div>
+        <!-- sudah baca -->
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <h3>adisufatulanam@dicoding</h3>
+    </div>
+    <!-- footer -->
+    <script src="js/script.js" type="text/javascript"></script>
+
+</body>
+
+</html>
